@@ -217,11 +217,11 @@ There is a quick start showing you the details.
 
 Here is the fast track.
 
-Create the directory and add the [config file](https://github.com/dbwebb-se/mvc/blob/main/example/scrutinizer/.scrutinizer.yml).
+Create the directory and add the [config file](https://github.com/mosbth/mvc-metrics/blob/main/.github/workflows/github-actions-demo.yml).
 
 ```
 mkdir --parents .github/workflows
-curl -s https://raw.githubusercontent.com/dbwebb-se/mvc/main/example/scrutinizer/.scrutinizer.yml > .scrutinizer.yml
+curl -s https://raw.githubusercontent.com/mosbth/mvc-metrics/main/.github/workflows/github-actions-demo.yml > .github/workflows/github-actions.yml
 ```
 
 
