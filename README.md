@@ -1,6 +1,9 @@
 Metrics in the mvc course
 =========================
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/?branch=main)
+[![Code Coverage](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/?branch=main)
+
 This repo is used to test and verify that it can be integrated with external tools for continous integration, automated test and statical code analysis for code quality.
 
 The repo is part of course material for the [dbwebb mvc-course](https://github.com/dbwebb-se/mvc). The repo is a Symfony app.
@@ -202,3 +205,23 @@ Add the [config file](https://github.com/dbwebb-se/mvc/blob/main/example/scrutin
 ```
 curl -s https://raw.githubusercontent.com/dbwebb-se/mvc/main/example/scrutinizer/.scrutinizer.yml > .scrutinizer.yml
 ```
+
+
+
+Add to GitHub Actions
+-------------------------
+
+There is a quick start showing you the details.
+
+* [Quickstart for GitHub Actions](https://docs.github.com/en/actions/quickstart)
+
+Here is the fast track.
+
+Create the directory and add the [config file](https://github.com/dbwebb-se/mvc/blob/main/example/scrutinizer/.scrutinizer.yml).
+
+```
+mkdir --parents .github/workflows
+curl -s https://raw.githubusercontent.com/dbwebb-se/mvc/main/example/scrutinizer/.scrutinizer.yml > .scrutinizer.yml
+```
+
+
