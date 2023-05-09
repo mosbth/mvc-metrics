@@ -21,8 +21,18 @@ jobs:
           composer require --working-dir=tools/php-cs-fixer friendsofphp/php-cs-fixer
           composer csfix:dry
 
-      - run: composer phpmd
-      - run: composer phpstan
+      - name: phpmd
+        run: |
+          mkdir --parents tools/phpmd
+          composer require --working-dir=tools/phpmd phpmd/phpmd
+          composer phpmd
+
+      - name: phpstan
+        run: |
+          mkdir --parents tools/phpstan
+          composer require --working-dir=tools/phpstan phpstan/phpstan
+          composer phpstan
+
       - run: composer phpunit
       - run: composer phpdoc
       - run: composer phpmetrics
