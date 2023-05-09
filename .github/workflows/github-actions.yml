@@ -35,6 +35,7 @@ jobs:
 
       - name: phpunit
         run: |
+          composer install --no-interaction --dev
           composer phpunit
   
       - name: phpdoc
