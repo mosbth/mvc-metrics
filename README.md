@@ -5,7 +5,7 @@ Metrics in the mvc course
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/?branch=main)
 [![Code Coverage](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/?branch=main)
 
-![GitHub Actions](https://github.com/mosbth/mvc-metrics/actions/workflows/main.yml/badge.svg)
+[![GitHub Actions](https://github.com/mosbth/mvc-metrics/actions/workflows/main.yml/badge.svg)](https://github.com/mosbth/mvc-metrics/actions/workflows/main.yml)
 
 
 This repo is used to test and verify that it can be integrated with external tools for continous integration, automated test and statical code analysis for code quality.
