@@ -26,18 +26,18 @@ class ProductController extends AbstractController
         ManagerRegistry $doctrine
     ): Response {
         $entityManager = $doctrine->getManager();
-    
+
         $product = new Product();
         $product->setName('Keyboard_num_' . rand(1, 9));
         $product->setValue(rand(100, 999));
-    
+
         // tell Doctrine you want to (eventually) save the Product
         // (no queries yet)
         $entityManager->persist($product);
-    
+
         // actually executes the queries (i.e. the INSERT query)
         $entityManager->flush();
-    
+
         return new Response('Saved new product with id '.$product->getId());
     }
 
@@ -49,7 +49,7 @@ class ProductController extends AbstractController
     ): Response {
         $products = $productRepository
             ->findAll();
-    
+
         // return $this->json($products);
 
         $response = $this->json($products);
@@ -68,7 +68,7 @@ class ProductController extends AbstractController
     ): Response {
         $product = $productRepository
             ->find($id);
-    
+
         return $this->json($product);
     }
 
@@ -78,7 +78,7 @@ class ProductController extends AbstractController
     public function deleteProductById(
         ProductRepository $productRepository,
         int $id
-    ): Response {    
+    ): Response {
         $product = $productRepository->find($id);
 
         if (!$product) {
@@ -86,7 +86,7 @@ class ProductController extends AbstractController
                 'No product found for id '.$id
             );
         }
-    
+
         $productRepository->remove($product, true);
 
         return $this->redirectToRoute('product_show_all');
@@ -107,10 +107,10 @@ class ProductController extends AbstractController
                 'No product found for id '.$id
             );
         }
-    
+
         $product->setValue($value);
         $productRepository->save($product, true);
-    
+
         return $this->redirectToRoute('product_show_all');
     }
 }

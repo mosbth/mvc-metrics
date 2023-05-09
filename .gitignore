@@ -1,4 +1,5 @@
 tools/
+.phpdoc/
 
 ###> symfony/framework-bundle ###
 /.env.local

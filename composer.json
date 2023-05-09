@@ -97,13 +97,17 @@
         "post-update-cmd": [
             "@auto-scripts"
         ],
+        "csfix": "tools/php-cs-fixer/vendor/bin/php-cs-fixer --config=.php-cs-fixer.dist.php fix src tests",
+        "csfix:dry": "tools/php-cs-fixer/vendor/bin/php-cs-fixer --config=.php-cs-fixer.dist.php fix src tests --dry-run -v",
         "phpmd": "tools/phpmd/vendor/bin/phpmd . text phpmd.xml || true",
         "phpstan": "tools/phpstan/vendor/bin/phpstan || true",
         "lint": [
             "@phpmd",
             "@phpstan"
         ],
-        "phpunit": "XDEBUG_MODE=coverage vendor/bin/phpunit"
+        "phpunit": "XDEBUG_MODE=coverage vendor/bin/phpunit",
+        "phpdoc": "tools/phpdoc/phpdoc",
+        "phpmetrics": "tools/phpmetrics/vendor/bin/phpmetrics --config=phpmetrics.json"
     },
     "conflict": {
         "symfony/symfony": "*"
