@@ -1,6 +1,7 @@
 Metrics in the mvc course
 =========================
 
+[![Build Status](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/badges/build.png?b=main)](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/build-status/main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/?branch=main)
 [![Code Coverage](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/mosbth/mvc-metrics/?branch=main)
 
