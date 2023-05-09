@@ -228,4 +228,4 @@ mkdir --parents .github/workflows
 curl -s https://raw.githubusercontent.com/mosbth/mvc-metrics/main/.github/workflows/main.yml > .github/workflows/main.yml
 ```
 
-
+The actions will be run on your next commit.
