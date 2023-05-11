@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.005944">
+    <testsuite name="Project Test Suite" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.005944">
+      <testsuite name="App\Dice\DiceTest" file="/home/dbw/me/kmom06/metrics/tests/Dice/DiceTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.005944">
+        <testcase name="testCreateDice" class="App\Dice\DiceTest" classname="App.Dice.DiceTest" file="/home/dbw/me/kmom06/metrics/tests/Dice/DiceTest.php" line="16" assertions="2" time="0.005944"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
